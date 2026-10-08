@@ -1,25 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactoryPattern.Beverages
+﻿namespace FactoryPattern.Beverages
 {
     internal class Espresso : Beverage
     {
         public Espresso()
         {
-            description = "Espresso";
-        
-        }
-        public override string GetDescription()
-        {
-            return description;
-        }
-        public override double cost()
-        {
-            return 1.99 +base.cost();
+            name = "Espresso";
+            baseIngredient = "Espresso";
+            cost = 1.99;
         }
     }
 }
