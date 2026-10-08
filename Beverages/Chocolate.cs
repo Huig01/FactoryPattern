@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern.Beverages
 {
-    internal class Espresso : Beverage
+    internal class Chocolate : Beverage
     {
-        public Espresso()
+        public Chocolate()
         {
-            description = "Espresso";
-        
+            description = "Chocolate";
         }
         public override string GetDescription()
         {
@@ -19,7 +18,7 @@ namespace DecoratorPattern.Beverages
         }
         public override double cost()
         {
-            return 1.99 +base.cost();
+            return 1.85;
         }
     }
 }
