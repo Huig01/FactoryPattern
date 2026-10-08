@@ -1,8 +1,7 @@
-﻿using DecoratorPattern.Beverages;
-using DecoratorPattern.Condiments;
+﻿using FactoryPattern.Beverages;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace DecoratorPattern
+namespace FactoryPattern
 {
     internal class Program
     {
@@ -12,20 +11,20 @@ namespace DecoratorPattern
             espresso.Size = Size.GRANDE;
             PrintBeverage(espresso);
 
-            Beverage dopio = new Espresso();
-            dopio.Size = Size.VENTI;
-            dopio = new CondimentEspresso(dopio);
-            PrintBeverage(dopio);
+            //Beverage dopio = new Espresso();
+            //dopio.Size = Size.VENTI;
+            //dopio = new CondimentEspresso(dopio);
+            //PrintBeverage(dopio);
 
-            Beverage lungo = new Espresso();
+            //Beverage lungo = new Espresso();
+            ////lungo.Size = Size.TALL;
+            //lungo = new Water(lungo);
+            //PrintBeverage(lungo);
+
+            //Beverage macchiato = new Espresso();
             //lungo.Size = Size.TALL;
-            lungo = new Water(lungo);
-            PrintBeverage(lungo);
-
-            Beverage macchiato = new Espresso();
-            lungo.Size = Size.TALL;
-            macchiato = new MilkFoam(macchiato);            
-            PrintBeverage(macchiato);
+            //macchiato = new MilkFoam(macchiato);            
+            //PrintBeverage(macchiato);
 
             //Beverage Corretta = new Espresso();
             //Corretta = new Liqour(Corretta);

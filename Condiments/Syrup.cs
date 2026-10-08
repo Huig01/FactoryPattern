@@ -1,11 +1,11 @@
-﻿using DecoratorPattern.Beverages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FactoryPattern.Beverages;
 
-namespace DecoratorPattern.Condiments
+namespace FactoryPattern.Condiments
 {
     internal class Syrup : CondimentDecorator
     {

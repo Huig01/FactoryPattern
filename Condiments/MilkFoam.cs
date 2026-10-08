@@ -1,18 +1,18 @@
-﻿using DecoratorPattern.Beverages;
+﻿using FactoryPattern.Beverages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DecoratorPattern.Condiments
+namespace FactoryPattern.Condiments
 {
     internal class MilkFoam : CondimentDecorator
     {
-        public MilkFoam(Beverage beverage) : base(beverage) 
+        public MilkFoam(Beverage beverage) : base(beverage)
         {
             this.baseBeverage = beverage;
-        }        
+        }
 
         public override double cost()
         {
